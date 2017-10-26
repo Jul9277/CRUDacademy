@@ -1,0 +1,20 @@
+<h1>Listing des Moussaillons</h1>
+ 
+<table>
+  <tr>
+    <th>Profil</th>
+    <th>Description</th>
+    <th> Gossip </th>
+    <th> 
+  </tr>
+ 
+  <% @moussaillon.each do |moussaillon| %>
+    <tr>
+      <td><%= link_to moussaillon.username, moussaillon_path(moussaillon)  %></td>
+      <td><%= moussaillon.bio %></td>
+      <td><%= gossip.body %></td>
+      <td><%= gossip.created_at %></td>
+    </tr>
+    <%= link_to 'Voir votre profil', moussaillon_path %>
+  <% end %>
+</table>

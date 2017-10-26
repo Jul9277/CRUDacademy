@@ -1,0 +1,13 @@
+<h1> Vos informations </h1>
+
+  <%= form_tag("/moussaillons", method: "post") do %>
+
+ Votre p'tit nom:<br/>
+  <%= text_field_tag ("moussaillon[username]") %><br/>
+</br>
+ Votre adresse-email: <br/>
+  <%= text_field_tag ("moussaillon[adresse_email]") %><br/>
+  
+  <%= submit_tag("Créer") %>
+  
+<% end %>

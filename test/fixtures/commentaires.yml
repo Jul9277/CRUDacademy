@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pin_id: 1
+  utilisateur_id: 1
+  contenu: MyText
+
+two:
+  pin_id: 1
+  utilisateur_id: 1
+  contenu: MyText

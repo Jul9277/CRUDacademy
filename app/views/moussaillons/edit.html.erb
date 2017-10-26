@@ -1,0 +1,12 @@
+<p> Mise à jour de votre profil Moussaillon </p>
+
+  <%= form_for(:moussaillon, url: moussaillon_path, method: :patch) do |f| %>
+  Nom: <%= f.text_field :username %><br />
+  Adresse email: <%= f.text_field :adresse_email %><br />
+  Votre description: <%= f.text_area :bio %><br />
+  <!--Votre gossip: <%= f.text_area :body %><br />-->
+  <%= f.submit %>
+<% end %>
+
+<!--<%= link_to 'Clique pour détruire ton profil', @moussaillon, method: :delete %>
+<%= link_to 'Clique pour détruire ton gossip ', @gossip, method: :delete %>

@@ -1,0 +1,17 @@
+<h1>Votre profil Moussaillon </h1><br/>
+
+<h4> Votre nom</h4>
+<%= @moussaillon.username %> <br/>
+
+<h4> Votre adresse email</h4><br/>
+<%= @moussaillon.adresse_email %><br/>
+
+<h4> Votre description</h4><br/>
+<%= @moussaillon.bio %><br/>
+
+<!--<h4> Votre Gossip</h4><br/>
+<%= @go.boby %><br/>
+
+<%= "Créé le:" @gossip.created_at %><br/> -->
+<br/>
+<%= link_to 'Mettre à jour votre profil', edit_moussaillon_path %>
