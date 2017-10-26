@@ -4,7 +4,6 @@
   <tr>
     <th>Profil</th>
     <th>Description</th>
-    <th> Gossip </th>
     <th> 
   </tr>
  
@@ -12,9 +11,6 @@
     <tr>
       <td><%= link_to moussaillon.username, moussaillon_path(moussaillon)  %></td>
       <td><%= moussaillon.bio %></td>
-      <td><%= gossip.body %></td>
-      <td><%= gossip.created_at %></td>
     </tr>
-    <%= link_to 'Voir votre profil', moussaillon_path %>
   <% end %>
 </table>
